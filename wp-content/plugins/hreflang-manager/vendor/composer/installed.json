@@ -1,0 +1,39 @@
+{
+    "packages": [
+        {
+            "name": "daextteam/plugin-update-checker",
+            "version": "1.0.11",
+            "version_normalized": "1.0.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/daextteam/plugin-update-checker.git",
+                "reference": "16d5126efa69d4f0fa1f67b8655986d2adcc53e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/daextteam/plugin-update-checker/get/16d5126efa69d4f0fa1f67b8655986d2adcc53e6.zip",
+                "reference": "16d5126efa69d4f0fa1f67b8655986d2adcc53e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "time": "2025-04-18T12:49:14+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Daextteam\\PluginUpdateChecker\\": "src/"
+                }
+            },
+            "description": "This class enables seamless updates for WordPress plugins hosted on the daext.com site.",
+            "homepage": "https://bitbucket.org/daextteam/plugin-update-checker",
+            "support": {
+                "source": "https://bitbucket.org/daextteam/plugin-update-checker/src/16d5126efa69d4f0fa1f67b8655986d2adcc53e6/?at=1.0.11"
+            },
+            "install-path": "../daextteam/plugin-update-checker"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

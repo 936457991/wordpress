@@ -1,0 +1,6 @@
+# BEGIN AIOSEO REDIRECTS
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Redirect 301 "/aioseo-test-server-redirects-be13e491a83b2a0afecae2be024014c9" "/aioseo-test-server-redirects-intercepted"
+</IfModule>
+# END AIOSEO REDIRECTS

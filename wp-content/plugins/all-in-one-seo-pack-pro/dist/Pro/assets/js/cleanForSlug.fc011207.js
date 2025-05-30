@@ -1,0 +1,1 @@
+import{d as r}from"./deburr.ef08c7b4.js";function e(n){return n?r(n).replace(/[\s./]+/g,"-").replace(/[^\p{L}\p{N}\p{M}_-]+/gu,"").toLowerCase().replace(/-+/g,"-").replace(/(^-+)|(-+$)/g,""):""}export{e as c};

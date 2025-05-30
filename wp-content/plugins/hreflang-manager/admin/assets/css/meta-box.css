@@ -1,0 +1,99 @@
+#da-hm-meta .inside{
+    margin: 0;
+    padding: 0;
+}
+
+.table-hreflang-manager{
+    border-collapse: collapse;
+    width: 100%;
+    border: 0;
+    margin: 0;
+}
+
+.table-hreflang-manager *{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: 400;
+    font-size: 12px !important;
+}
+
+.table-hreflang-manager input[type="text"],
+.table-hreflang-manager select{
+    color: #333 !important;
+}
+
+.table-hreflang-manager input[type="text"]{
+    height: 24px;
+    line-height: 16px;
+    box-shadow: none;
+    padding: 3px 5px;
+    margin: 0 !important;
+    border-color: #dddddd;
+    border-radius: 0;
+    min-height: auto;
+}
+
+.table-hreflang-manager input[type="text"]:focus{
+    border-color: #5b9dd9;
+}
+
+.table-hreflang-manager select{
+    height: 24px;
+    line-height: 24px;
+}
+
+.table-hreflang-manager > tbody > tr > td,
+.table-hreflang-manager > tbody > tr > th{
+    padding: 8px;
+}
+
+.table-hreflang-manager > tbody > tr:not(:last-child) > td,
+.table-hreflang-manager > tbody > tr:not(:last-child) > th{
+    border-bottom: 1px solid #eeeeee;
+}
+
+.table-hreflang-manager > tbody > tr > th{
+    text-align: right;
+    color: #555;
+}
+
+.table-hreflang-manager > tbody > tr > th > label{
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    overflow: hidden;
+}
+
+.table-hreflang-manager .dahm-language,
+.table-hreflang-manager .dahm-script,
+.table-hreflang-manager .dahm-locale{
+    width: 300px !important;
+    visibility: hidden !important;
+}
+
+.dahm-url{
+    width: 100%;
+    max-width: 570px;
+}
+
+/* Meta box in "Side" position -------------------------------------------------------------------------------------- */
+#side-sortables .table-hreflang-manager .regular-text,
+#side-sortables .table-hreflang-manager .select2-container{
+    min-width: 190px !important;
+    max-width: 190px !important;
+}
+
+/* Responsive ------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 782px){
+    .table-hreflang-manager label{
+        text-align: left;
+    }
+    #side-sortables .select2,
+    .select2{
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+    .table-hreflang-manager > tbody > tr > th{
+        border-bottom: 1px solid #eeeeee;
+    }
+}

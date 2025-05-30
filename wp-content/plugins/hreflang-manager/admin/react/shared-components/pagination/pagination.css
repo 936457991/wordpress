@@ -1,0 +1,83 @@
+.pagination-container {
+    display: flex !important;
+    list-style-type: none !important;
+}
+.pagination-container .pagination-item {
+    padding: 0 12px !important;
+    height: 32px !important;
+    text-align: center !important;
+    margin: auto 4px !important;
+    color: rgba(0, 0, 0, 0.87) !important;
+    display: flex !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+    letter-spacing: 0.01071em !important;
+    border-radius: 16px !important;
+    line-height: 1.43 !important;
+    font-size: 13px !important;
+    min-width: 32px !important;
+}
+.pagination-container .pagination-item.dots:hover {
+    background-color: transparent !important;
+    cursor: default !important;
+}
+.pagination-container .pagination-item:hover {
+    background-color: rgba(0, 0, 0, 0.04) !important;
+    cursor: pointer !important;
+}
+.pagination-container .pagination-item.selected {
+    background-color: #f6f7f7 !important;
+}
+.pagination-container .pagination-item .arrow::before {
+    position: relative !important;
+    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+    content: "" !important;
+    /* By using an em scale, the arrows will size with the font */
+    display: inline-block !important;
+    width: 0.4em !important;
+    height: 0.4em !important;
+    border-right: 0.12em solid rgba(0, 0, 0, 0.87) !important;
+    border-top: 0.12em solid rgba(0, 0, 0, 0.87) !important;
+}
+.pagination-container .pagination-item .arrow.left {
+    transform: rotate(-135deg) translate(-50%) !important;
+}
+.pagination-container .pagination-item .arrow.right {
+    transform: rotate(45deg) !important;
+}
+.pagination-container .pagination-item.disabled {
+    pointer-events: none !important;
+}
+.pagination-container .pagination-item.disabled .arrow::before {
+    border-right: 0.12em solid rgba(0, 0, 0, 0.43) !important;
+    border-top: 0.12em solid rgba(0, 0, 0, 0.43) !important;
+}
+.pagination-container .pagination-item.disabled:hover {
+    background-color: transparent !important;
+    cursor: default !important;
+}
+
+/* Adaptation to solve overwrite of WordPress CSS - Start */
+
+.arrow {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    bottom: 0;
+}
+
+.arrow:after{
+    display: none;
+    content: "";
+    position: relative;
+    left: 0px;
+    top: 00px;
+    width: auto;
+    height: auto;
+    transform: none;
+}
+
+/* Adaptation to solve overwrite of WordPress CSS - End */
