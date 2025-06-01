@@ -252,7 +252,7 @@ function pk_check_right_md5()
     }
 }
 
-add_action('init', 'pk_check_right_md5');
+// add_action('init', 'pk_check_right_md5');
 
 
 /**
